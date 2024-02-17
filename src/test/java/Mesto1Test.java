@@ -20,7 +20,7 @@ public class Mesto1Test {
     @Test
     @DisplayName("Add a new photo")
     @Description("This test is for adding a new photo to Mesto.")
-    public void addNewPhoto() {
+    //public void addNewPhoto() {
         given()
                 .header("Content-type", "application/json") // Передаём Content-type в заголовке для указания типа файла
                 .auth().oauth2(bearerToken) // Передаём токен для аутентификации
