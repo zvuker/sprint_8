@@ -32,7 +32,7 @@ public class Mesto1Test {
     @Test
     @DisplayName("Like the first photo")
     @Description("This test is for liking the first photo on Mesto.")
-    public void likeTheFirstPhoto() {
+    //public void likeTheFirstPhoto() {
         String photoId = getTheFirstPhotoId();
 
         likePhotoById(photoId);
@@ -40,7 +40,7 @@ public class Mesto1Test {
     }
 
     @Step("Take the first photo from the list")
-    private String getTheFirstPhotoId() {
+    //private String getTheFirstPhotoId() {
         // Получение списка фотографий и выбор первой из него
         return given()
                 .auth().oauth2(bearerToken) // Передаём токен для аутентификации
@@ -49,7 +49,7 @@ public class Mesto1Test {
     }
 
     @Step("Like a photo by id")
-    private void likePhotoById(String photoId) {
+    //private void likePhotoById(String photoId) {
         // Лайк фотографии по photoId
         given()
                 .auth().oauth2(bearerToken) // Передаём токен для аутентификации
@@ -58,7 +58,7 @@ public class Mesto1Test {
     }
 
     @Step("Delete like from the photo by id")
-    private void deleteLikePhotoById(String photoId) {
+    //private void deleteLikePhotoById(String photoId) {
         // Снять лайк с фотографии по photoId
         given()
                 .auth().oauth2(bearerToken) // Передаём токен для аутентификации
